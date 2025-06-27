@@ -9,7 +9,7 @@ locals {
   app_cluster_name             = local.env == "prod" ? "ProdBackEndCluster" : "DevBackEndCluster"
   availability_zones           = ["us-east-2a", "us-east-2b", "us-east-2c"]
   app_task_family              = "easy-post-ia-backend-${local.env}"
-  container_port               = 3000
+  container_port               = 4000
   app_task_name                = "deploy-backend-${local.env}"
   ecs_task_execution_role_name = "deploy-backend-${local.env}-task-execution-role"
 
